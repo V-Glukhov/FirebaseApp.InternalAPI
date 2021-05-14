@@ -7,10 +7,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["InternalApi/InternalApi.csproj", "InternalApi/"]
-RUN dotnet restore "InternalApi/InternalApi.csproj"
+COPY ["src/api/InternalApi.csproj", "src/api/"]
+COPY ["src/BL/InternalAPI.BL.Contracts/InternalAPI.BL.Contracts.csproj", "src/BL/InternalAPI.BL.Contracts/"]
+RUN dotnet restore "src/api/InternalApi.csproj"
 COPY . .
-WORKDIR "/src/InternalApi"
+WORKDIR "/src/src/api"
 RUN dotnet build "InternalApi.csproj" -c Release -o /app/build
 
 FROM build AS publish

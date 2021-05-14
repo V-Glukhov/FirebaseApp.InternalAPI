@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>351771d4-16ed-4c10-a39c-6bdf71c43244</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BL\InternalAPI.BL.Contracts\InternalAPI.BL.Contracts.csproj" />
-    <ProjectReference Include="..\FirebaseServiceContracts\FirebaseService.Contracts.csproj" />
   </ItemGroup>
 
 </Project>
