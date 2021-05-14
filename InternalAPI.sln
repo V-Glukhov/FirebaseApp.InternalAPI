@@ -13,7 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A867D053
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternalApi", "src\api\InternalApi.csproj", "{472CC741-332E-43E6-834B-EFB5627F4421}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalAPI.BL.Contracts", "src\BL\InternalAPI.BL.Contracts\InternalAPI.BL.Contracts.csproj", "{42E78B77-58F5-4F51-B04F-2F7551236EB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternalAPI.BL.Contracts", "src\BL\InternalAPI.BL.Contracts\InternalAPI.BL.Contracts.csproj", "{42E78B77-58F5-4F51-B04F-2F7551236EB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B48718F1-402E-410A-850B-FF8DFC00A448}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
